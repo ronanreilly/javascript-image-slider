@@ -1,0 +1,124 @@
+/* Cascade ALL */
+
+body{
+    /*background-image:url('../images/view_port_back.png');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position:center;*/
+    background-color: black;
+}
+
+.viewPortBack{
+    position: absolute;
+}
+
+.viewPort{
+    position: absolute;
+}
+
+.leftBlind{
+    position: absolute;;
+}
+
+.rightBlind{
+    position: absolute;
+}
+
+.galleryContainerClass{
+    margin-top:50px;
+    position: absolute;
+}
+#gallery_container{
+
+    position: absolute;
+}
+
+.images, .middle_pos{
+    display: inline;
+}
+
+.middle_pos{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#gallery_control_next{
+    position: absolute;
+    font-size: 20pt;
+    margin-top: 440px;
+    margin-left: 1110px;
+}
+
+#gallery_control_prev{
+    position: absolute;
+    font-size: 20pt;
+    margin-top: 440px;
+    margin-left: 695px;
+}
+
+#gallery_control_play{
+    position: absolute;
+    font-size: 20pt;
+    margin-top: 440px;
+    margin-left: 900px;
+}
+
+#download_slider{
+    position: absolute;
+    font-size: 20pt;
+    margin-top: 500px;
+    margin-left: 876px;
+}
+
+#form_container{
+    background-color: #097a96;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+h1{
+    color: white;
+    font-family: verdana;
+    font-size: 14pt;
+    text-align: center;
+    padding: 10px;
+}
+
+.form_row{
+    color: white;
+    padding: 20px;
+    background-color: #292828;
+}
+
+.label{
+    font-family: verdana;
+    padding: 10px;
+}
+
+.error{
+    font-size: 11pt;
+    padding-left:10px;
+    font-family: verdana;
+}
+
+#submit{
+    padding: 15px 10px 10px 120px;
+}
+
+a{
+    font-family: verdana;
+    font-size: 15pt;
+    color: #097a96;
+}
+
+a:hover{
+    color: #0e9a17
+}
+
+#download_container{
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+}

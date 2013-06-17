@@ -1,0 +1,53 @@
+<!-- Ronan Reilly 2013 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Please Fill Out The Form to Download The Slider (Ronan Reilly CA1 Advanced JavaScript 2012)</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="javascript/form_validation.js">
+        </script>
+    </head>
+    <body>
+        <!-- START FORM CONTAINER -->
+
+        <div id="form_container">
+            <h1>To Download Slider Enter Your Details Below:</h1>
+
+            <!-- The forms action is  a html page for simplicity in this eaxmple -->
+            <form action="finish_download.html" method="post" id="download">
+                
+                <div class="form_row">
+                    <span class="label">Name:</span> 
+                    <!-- This input has an onBlur function for validation that takes four parameters, min and max charcters, the value and the error span element -->
+                    <input id="name" name="name" type="text" size="24" onblur="valNoChars(1, 50, this, document.getElementById('name_error'))">
+                    <span id="name_error" class="error"></span>
+                </div>
+
+                <div class="form_row">
+                    <span class="label">Email:</span>
+                    <!-- This input has an onBlur function for validation that takes two parameters, he value and the error span element -->
+                    <input id="email" name="email" type="text" size="24" onblur="valEmailFormat(this, document.getElementById('email_error'))">
+                    <span id="email_error" class="error"></span>
+                </div>
+
+                <div class="form_row">
+                    <!-- This input has an onBlur function for validation that takes two parameters, he value and the error span element -->
+                    <span class="label">Phone No:</span> <input id="phone" name="phone" type="text" size="19" onblur="valPhoneNum(this, document.getElementById('phone_error'))">
+                    <span id="phone_error" class="error"></span>
+                </div>
+                
+                <!-- This radio buttons are vaidated in the  beginThisValidation() function called on the submit form button. -->
+                <div class="form_row">
+                    <span class="label">Subscribe for Newsletter?</span>
+                    <input type="radio" name="news_sub" value="Yes" id="Yes" />Yes
+                    <input type="radio" name="news_sub" value="No" id="No"/>No
+                    <span id="news_error" class="error"></span>
+                </div>
+
+                <div  id="submit">
+                    <input type="button" value="Submit Details" onclick="beginThisValidation(this.form);">
+                </div>
+            </form>
+        </div><!-- FINISH FORM CONTAINER -->
+    </body>
+</html>
